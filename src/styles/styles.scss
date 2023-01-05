@@ -1,0 +1,34 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: var(--accent-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    flex-grow: 1;
+    padding: 0 15px;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 50px;
+    }
+}
